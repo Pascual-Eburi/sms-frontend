@@ -1,0 +1,27 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+
+    --themed-bg: hsla(0, 0%, 100%,1);
+    --themed-hover-bg: hsla(0, 0%, 0%, 0.08);
+    --themed-fg: hsla(0, 0%, 9%, 1);
+    --themed-border: hsla(0, 0%, 0%, 0.08);
+}
+
+input:hover,
+input:focus,
+input:active,
+button:focus,
+button:active,
+select:focus,
+select:active,
+a.page-link:focus{
+    box-shadow: 0 0 0 1px var(--themed-border, transparent)!important;
+    border-radius: 6px
+}
+
+input[type=checkbox],
+input[type=radio],
+select{
+    cursor: pointer;
+}
